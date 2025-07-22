@@ -107,6 +107,47 @@
         };
     };
 
+/ {
+    behaviors {
+        grid_mouse_1: grid_mouse_1 {
+            compatible = "zmk,behavior-mouse-key";
+            move = <320 180>;
+        };
+        grid_mouse_2: grid_mouse_2 {
+            compatible = "zmk,behavior-mouse-key";
+            move = <960 180>;
+        };
+        grid_mouse_3: grid_mouse_3 {
+            compatible = "zmk,behavior-mouse-key";
+            move = <1600 180>;
+        };
+        grid_mouse_4: grid_mouse_4 {
+            compatible = "zmk,behavior-mouse-key";
+            move = <320 540>;
+        };
+        grid_mouse_5: grid_mouse_5 {
+            compatible = "zmk,behavior-mouse-key";
+            move = <960 540>;
+        };
+        grid_mouse_6: grid_mouse_6 {
+            compatible = "zmk,behavior-mouse-key";
+            move = <1600 540>;
+        };
+        grid_mouse_7: grid_mouse_7 {
+            compatible = "zmk,behavior-mouse-key";
+            move = <320 900>;
+        };
+        grid_mouse_8: grid_mouse_8 {
+            compatible = "zmk,behavior-mouse-key";
+            move = <960 900>;
+        };
+        grid_mouse_9: grid_mouse_9 {
+            compatible = "zmk,behavior-mouse-key";
+            move = <1600 900>;
+        };
+    };
+};
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -190,9 +231,9 @@
 
         layer_3 {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &msc SCRL_UP    &trans          &trans          &trans           &trans
-        &trans  &trans  &trans  &trans  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &mmv MOVE_DOWN  &trans           &trans  &trans
+        &trans  &grid_mouse_1  &grid_mouse_2  &grid_mouse_3  &trans    &msc SCRL_UP    &trans          &trans          &trans           &trans
+        &trans  &grid_mouse_4  &grid_mouse_5  &grid_mouse_6  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans
+&trans  &trans  &grid_mouse_7  &grid_mouse_8  &grid_mouse_9  &trans    &trans          &trans          &mmv MOVE_DOWN  &trans           &trans  &trans
                         &trans  &trans  &trans    &trans          &mkp LCLK       &mkp RCLK
             >;
         };
