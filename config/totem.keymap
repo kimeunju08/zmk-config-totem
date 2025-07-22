@@ -33,11 +33,6 @@
     combos {
         compatible = "zmk,combos";
 
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <16 17 18>;
-        };
-
         shiftQ {
             bindings = <&kp RS(Q)>;
             key-positions = <0 10>;
@@ -72,6 +67,16 @@
             bindings = <&kp LS(P)>;
             key-positions = <9 19>;
         };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <16 17>;
+        };
+
+        caps {
+            bindings = <&kp CAPS>;
+            key-positions = <13 14>;
+        };
     };
 
     macros {
@@ -92,13 +97,13 @@
     };
 
     behaviors {
-        new_behavior: new_behavior {
+        exq: exq {
             compatible = "zmk,behavior-tap-dance";
-            label = "NEW_BEHAVIOR";
+            label = "EXQ";
             #binding-cells = <0>;
             bindings = <&kp EXCLAMATION>, <&kp QUESTION>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
         };
     };
 
@@ -124,10 +129,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-               &kp Q  &kp W  &kp E             &kp R          &kp T    &kp Y  &kp U      &kp I         &kp O    &kp P
-               &kp A  &kp S  &kp D             &kp F          &kp G    &kp H  &kp J      &kp K         &kp L    &kp DOUBLE_QUOTES
-&new_behavior  &kp Z  &kp X  &kp C             &kp V          &kp B    &kp B  &kp N      &kp M         &kp DOT  &kp COMMA          &kp SQT
-                             &kp LANG_HANGEUL  &kp BACKSPACE  &mo 1    &mo 2  &kp SPACE  &kp KP_ENTER
+      &kp Q  &kp W  &kp E   &kp R          &kp T    &kp Y  &kp U      &kp I         &kp O    &kp P
+      &kp A  &kp S  &kp D   &kp F          &kp G    &kp H  &kp J      &kp K         &kp L    &kp DOUBLE_QUOTES
+&exq  &kp Z  &kp X  &kp C   &kp V          &kp B    &kp B  &kp N      &kp M         &kp DOT  &kp COMMA          &kp SQT
+                    &tog 3  &kp BACKSPACE  &mo 1    &mo 2  &kp SPACE  &kp KP_ENTER
             >;
         };
 
@@ -150,10 +155,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-          &kp LG(Z)  &kp LG(A)  &kp LG(C)  &kp LG(V)    &msc SCRL_UP      &kp C_VOL_UP  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp C_BRI_INC
-          &kp LG(S)  &kp LEFT   &kp UP     &kp RIGHT    &msc SCRL_DOWN    &kp C_VOL_DN  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp C_BRI_DEC
-&kp CAPS  &kp TAB    &kp LG(X)  &kp DOWN   &kp RS(END)  &kp HOME          &kp K_MUTE    &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans         &kp ESC
-                                &trans     &trans       &trans            &trans        &kp KP_N0  &trans
+              &kp LG(Z)  &kp LG(A)  &kp LG(C)  &kp LG(V)    &kp HOME    &kp C_VOL_UP  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp C_BRI_INC
+              &kp LG(S)  &kp LEFT   &kp UP     &kp RIGHT    &kp END     &kp C_VOL_DN  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp C_BRI_DEC
+&kp RS(CAPS)  &kp TAB    &kp LG(X)  &kp DOWN   &kp RS(END)  &trans      &kp K_MUTE    &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans         &kp ESC
+                                    &trans     &trans       &trans      &trans        &kp KP_N0  &trans
             >;
         };
 
@@ -176,10 +181,19 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp EXCL  &kp AT  &kp HASH        &kp DLLR          &kp PRCNT               &kp CARET              &kp AMPS              &kp ASTERISK     &kp MINUS  &kp PLUS
-           &trans    &trans  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET     &kp RIGHT_BRACE  &kp COLON  &kp SEMICOLON
-&kp TILDE  &trans    &trans  &trans          &trans            &kp LESS_THAN           &kp GREATER_THAN       &kp NON_US_BACKSLASH  &kp PIPE         &kp SLASH  &kp UNDERSCORE  &kp EQUAL
-                             &bt BT_SEL 0    &bt BT_SEL 1      &bt BT_SEL 2            &trans                 &bt BT_NXT            &bt BT_CLR
+            &kp EXCL  &kp AT  &kp HASH        &kp DLLR          &kp PRCNT               &kp CARET              &kp AMPS              &kp ASTERISK     &kp MINUS  &kp PLUS
+            &trans    &trans  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET     &kp RIGHT_BRACE  &kp COLON  &kp SEMICOLON
+&kp TILDE2  &trans    &trans  &trans          &trans            &kp LESS_THAN           &kp GREATER_THAN       &kp NON_US_BACKSLASH  &kp PIPE         &kp SLASH  &kp UNDERSCORE  &kp EQUAL
+                              &bt BT_SEL 0    &bt BT_SEL 1      &bt BT_SEL 2            &trans                 &bt BT_NXT            &bt BT_CLR
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &msc SCRL_UP    &trans          &trans          &trans           &trans
+        &trans  &trans  &trans  &trans  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &mmv MOVE_DOWN  &trans           &trans  &trans
+                        &trans  &trans  &trans    &trans          &mkp LCLK       &mkp RCLK
             >;
         };
 
