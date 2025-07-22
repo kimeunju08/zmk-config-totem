@@ -96,51 +96,60 @@
         };
     };
 
-    behaviors {
-        exq: exq {
-            compatible = "zmk,behavior-tap-dance";
-            label = "EXQ";
-            #binding-cells = <0>;
-            bindings = <&kp EXCLAMATION>, <&kp QUESTION>;
-            tapping-term-ms = <250>;
-        };
-        grid_mouse_1: grid_mouse_1 {
-            compatible = "zmk,behavior-mouse-key";
-            move = <320 180>;
-        };
-        grid_mouse_2: grid_mouse_2 {
-            compatible = "zmk,behavior-mouse-key";
-            move = <960 180>;
-        };
-        grid_mouse_3: grid_mouse_3 {
-            compatible = "zmk,behavior-mouse-key";
-            move = <1600 180>;
-        };
-        grid_mouse_4: grid_mouse_4 {
-            compatible = "zmk,behavior-mouse-key";
-            move = <320 540>;
-        };
-        grid_mouse_5: grid_mouse_5 {
-            compatible = "zmk,behavior-mouse-key";
-            move = <960 540>;
-        };
-        grid_mouse_6: grid_mouse_6 {
-            compatible = "zmk,behavior-mouse-key";
-            move = <1600 540>;
-        };
-        grid_mouse_7: grid_mouse_7 {
-            compatible = "zmk,behavior-mouse-key";
-            move = <320 900>;
-        };
-        grid_mouse_8: grid_mouse_8 {
-            compatible = "zmk,behavior-mouse-key";
-            move = <960 900>;
-        };
-        grid_mouse_9: grid_mouse_9 {
-            compatible = "zmk,behavior-mouse-key";
-            move = <1600 900>;
-        };
+   behaviors {
+    exq: exq {
+        compatible = "zmk,behavior-tap-dance";
+        label = "EXQ";
+        #binding-cells = <0>;
+        bindings = <&kp EXCLAMATION>, <&kp QUESTION>;
+        tapping-term-ms = <250>;
     };
+    grid_mouse_1: grid_mouse_1 {
+        compatible = "zmk,behavior-mouse-key";
+        #binding-cells = <0>;
+        move = <320 180>;
+    };
+    grid_mouse_2: grid_mouse_2 {
+        compatible = "zmk,behavior-mouse-key";
+        #binding-cells = <0>;
+        move = <960 180>;
+    };
+    grid_mouse_3: grid_mouse_3 {
+        compatible = "zmk,behavior-mouse-key";
+        #binding-cells = <0>;
+        move = <1600 180>;
+    };
+    grid_mouse_4: grid_mouse_4 {
+        compatible = "zmk,behavior-mouse-key";
+        #binding-cells = <0>;
+        move = <320 540>;
+    };
+    grid_mouse_5: grid_mouse_5 {
+        compatible = "zmk,behavior-mouse-key";
+        #binding-cells = <0>;
+        move = <960 540>;
+    };
+    grid_mouse_6: grid_mouse_6 {
+        compatible = "zmk,behavior-mouse-key";
+        #binding-cells = <0>;
+        move = <1600 540>;
+    };
+    grid_mouse_7: grid_mouse_7 {
+        compatible = "zmk,behavior-mouse-key";
+        #binding-cells = <0>;
+        move = <320 900>;
+    };
+    grid_mouse_8: grid_mouse_8 {
+        compatible = "zmk,behavior-mouse-key";
+        #binding-cells = <0>;
+        move = <960 900>;
+    };
+    grid_mouse_9: grid_mouse_9 {
+        compatible = "zmk,behavior-mouse-key";
+        #binding-cells = <0>;
+        move = <1600 900>;
+    };
+};
 
     keymap {
         compatible = "zmk,keymap";
