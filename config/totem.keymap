@@ -190,10 +190,10 @@
 
         layer_3 {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &msc SCRL_UP    &trans          &trans          &trans           &trans
-        &trans  &trans  &trans  &trans  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &mmv MOVE_DOWN  &trans           &trans  &trans
-                        &trans  &trans  &trans    &trans          &mkp LCLK       &mkp RCLK
+        &trans  &kp F13  &kp F14  &kp F15  &trans    &msc SCRL_UP    &trans          &trans          &trans           &trans
+        &trans  &kp F16  &kp F17  &kp F18  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans
+&trans  &trans  &kp F19  &kp F20  &kp F21  &trans    &trans          &trans          &mmv MOVE_DOWN  &trans           &trans  &trans
+                         &trans   &trans   &trans    &trans          &mkp LCLK       &mkp RCLK
             >;
         };
 
