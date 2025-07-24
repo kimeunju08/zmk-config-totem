@@ -79,7 +79,7 @@
         };
     };
 
-   macros {
+  macros {
     gif: gif {
         label = "giphy";
         compatible = "zmk,behavior-macro";
@@ -100,11 +100,11 @@
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings =
-            <&mmv MOVE -1920 -1080>,
-            <&mmv MOVE 320 180>;
+            <&mmv MOVE -1920 -1080>, // 왼쪽 위로 이동
+            <&mmv MOVE 320 180>;     // 오른쪽 아래로 이동
     };
     f14_macro: f14_macro {
-        label = "F13 mouse jump";
+        label = "F14 mouse jump";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings =
@@ -112,7 +112,7 @@
             <&mmv MOVE 960 180>;
     };
     f15_macro: f15_macro {
-        label = "F13 mouse jump";
+        label = "F15 mouse jump";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings =
@@ -120,7 +120,7 @@
             <&mmv MOVE 1600 180>;
     };
     f16_macro: f16_macro {
-        label = "F13 mouse jump";
+        label = "F16 mouse jump";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings =
@@ -128,7 +128,7 @@
             <&mmv MOVE 320 540>;
     };
     f17_macro: f17_macro {
-        label = "F13 mouse jump";
+        label = "F17 mouse jump";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings =
@@ -136,7 +136,7 @@
             <&mmv MOVE 960 540>;
     };
     f18_macro: f18_macro {
-        label = "F13 mouse jump";
+        label = "F18 mouse jump";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings =
@@ -144,7 +144,7 @@
             <&mmv MOVE 1600 540>;
     };
     f19_macro: f19_macro {
-        label = "F13 mouse jump";
+        label = "F19 mouse jump";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings =
@@ -152,7 +152,7 @@
             <&mmv MOVE 320 900>;
     };
     f20_macro: f20_macro {
-        label = "F13 mouse jump";
+        label = "F20 mouse jump";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings =
@@ -160,7 +160,7 @@
             <&mmv MOVE 960 900>;
     };
     f21_macro: f21_macro {
-        label = "F13 mouse jump";
+        label = "F21 mouse jump";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings =
@@ -168,7 +168,6 @@
             <&mmv MOVE 1600 900>;
     };
 };
-
     behaviors {
         exq: exq {
             compatible = "zmk,behavior-tap-dance";
@@ -263,9 +262,9 @@
 
         layer_3 {
             bindings = <
-        &trans  &f13_macro  &f14_macro  &f15_macro  &trans    &msc SCRL_DOWN  &trans          &trans          &trans           &kp PAGE_UP
-        &trans  &f16_macro  &f17_macro  &f18_macro  &trans    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &kp PAGE_DOWN
-&trans  &trans  &f19_macro  &f20_macro  &f21_macro  &trans    &trans          &trans          &mmv MOVE_DOWN  &trans           &trans         &trans
+        &trans  &kp F13  &kp F14  &kp F15  &trans    &msc SCRL_DOWN  &trans          &trans          &trans           &kp PAGE_UP
+        &trans  &kp F16  &kp F17  &kp F18  &trans    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &kp PAGE_DOWN
+&trans  &trans  &kp F19  &kp F20  &kp F21  &trans    &trans          &trans          &mmv MOVE_DOWN  &trans           &trans         &trans
                          &trans   &trans   &trans    &trans          &mkp LCLK       &mkp RCLK
             >;
         };
