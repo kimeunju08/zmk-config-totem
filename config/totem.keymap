@@ -97,70 +97,14 @@
     };
 
     behaviors {
-        exq: exq {
-            compatible = "zmk,behavior-tap-dance";
-            label = "EXQ";
-            #binding-cells = <0>;
-            bindings = <&kp EXCLAMATION>, <&kp QUESTION>;
-
-            tapping-term-ms = <250>;
-        };
     };
 
-        f13: f13 {
-    compatible = "zmk,behavior-mouse-key";
-    #binding-cells = <0>;
-    move = <-1920 -1080>;
-    move = <320 180>;
-};
-        f14: f14 {
-    compatible = "zmk,behavior-mouse-key";
-    #binding-cells = <0>;
-    move = <-1920 -1080>;
-    move = <960 180>;
-};
-        f15: f15 {
-    compatible = "zmk,behavior-mouse-key";
-    #binding-cells = <0>;
-    move = <-1920 -1080>;
-    move = <1600 180>;
-};
-        f16: f16 {
-    compatible = "zmk,behavior-mouse-key";
-    #binding-cells = <0>;
-    move = <-1920 -1080>;
-    move = <320 540>;
-};
-        f17: f17 {
-    compatible = "zmk,behavior-mouse-key";
-    #binding-cells = <0>;
-    move = <-1920 -1080>;
-    move = <960 540>;
-};
-        f18: f18 {
-    compatible = "zmk,behavior-mouse-key";
-    #binding-cells = <0>;
-    move = <-1920 -1080>;
-    move = <1600 540>;
-};
-        f19: f19 {
-    compatible = "zmk,behavior-mouse-key";
-    #binding-cells = <0>;
-    move = <-1920 -1080>;
-    move = <320 900>;
-};
-        f20: f20 {
-    compatible = "zmk,behavior-mouse-key";
-    #binding-cells = <0>;
-    move = <-1920 -1080>;
-    move = <960 900>;
-};
-        f21: f21 {
-    compatible = "zmk,behavior-mouse-key";
-    #binding-cells = <0>;
-    move = <-1920 -1080>;
-    move = <1600 900>;
-};
+    f13: f13 {
+        compatible = "zmk,behavior-mouse-key";
+        #binding-cells = <0>;
+        move = <-1920 -1080>;
+        move = <320 180>;
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -210,10 +154,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp LG(Z)  &kp LG(A)  &kp LG(C)  &kp LG(V)    &kp HOME    &kp C_VOL_UP  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp C_BRI_INC
-              &kp LG(S)  &kp LEFT   &kp UP     &kp RIGHT    &kp END     &kp C_VOL_DN  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp C_BRI_DEC
-&kp RS(CAPS)  &kp TAB    &kp LG(X)  &kp DOWN   &kp RS(END)  &trans      &kp K_MUTE    &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans         &kp ESC
-                                    &trans     &trans       &trans      &trans        &kp KP_N0  &trans
+              &kp LG(Z)  &kp LG(A)  &kp LG(C)  &kp LG(V)    &kp HOME             &kp C_VOL_UP  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp C_BRI_INC
+              &kp LG(S)  &kp LEFT   &kp UP     &kp RIGHT    &kp END              &kp C_VOL_DN  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp C_BRI_DEC
+&kp RS(CAPS)  &kp TAB    &kp LG(X)  &kp DOWN   &kp RS(END)  &kp RG(BACKSPACE)    &kp K_MUTE    &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans         &kp ESC
+                                    &trans     &trans       &trans               &trans        &kp KP_N0  &trans
             >;
         };
 
@@ -236,18 +180,18 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp EXCL  &kp AT  &kp HASH        &kp DLLR          &kp PRCNT               &kp CARET              &kp AMPS              &kp ASTERISK     &kp MINUS  &kp PLUS
-            &trans    &trans  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET     &kp RIGHT_BRACE  &kp COLON  &kp SEMICOLON
-&kp TILDE2  &trans    &trans  &trans          &trans            &kp LESS_THAN           &kp GREATER_THAN       &kp NON_US_BACKSLASH  &kp PIPE         &kp SLASH  &kp UNDERSCORE  &kp EQUAL
-                              &bt BT_SEL 0    &bt BT_SEL 1      &bt BT_SEL 2            &trans                 &bt BT_NXT            &bt BT_CLR
+               &kp EXCL  &kp AT  &kp HASH        &kp DLLR          &kp PRCNT               &kp CARET              &kp AMPS              &kp ASTERISK     &kp MINUS  &kp PLUS
+               &trans    &trans  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET     &kp RIGHT_BRACE  &kp COLON  &kp SEMICOLON
+&kp LS(GRAVE)  &trans    &trans  &trans          &trans            &kp LESS_THAN           &kp GREATER_THAN       &kp NON_US_BACKSLASH  &kp PIPE         &kp SLASH  &kp UNDERSCORE  &kp EQUAL
+                                 &bt BT_SEL 0    &bt BT_SEL 1      &bt BT_SEL 2            &trans                 &bt BT_NXT            &bt BT_CLR
             >;
         };
 
         layer_3 {
             bindings = <
-        &trans  &kp F13  &kp F14  &kp F15  &trans    &msc SCRL_UP    &trans          &trans          &trans           &trans
-        &trans  &kp F16  &kp F17  &kp F18  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans
-&trans  &trans  &kp F19  &kp F20  &kp F21  &trans    &trans          &trans          &mmv MOVE_DOWN  &trans           &trans  &trans
+        &trans  &kp F13  &kp F14  &kp F15  &trans    &msc SCRL_DOWN  &trans          &trans          &trans           &kp PAGE_UP
+        &trans  &kp F16  &kp F17  &kp F18  &trans    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &kp PAGE_DOWN
+&trans  &trans  &kp F19  &kp F20  &kp F21  &trans    &trans          &trans          &mmv MOVE_DOWN  &trans           &trans         &trans
                          &trans   &trans   &trans    &trans          &mkp LCLK       &mkp RCLK
             >;
         };
