@@ -79,22 +79,86 @@
         };
     };
 
-  macros {
-    gif: gif {
-        label = "giphy";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings =
-            <&macro_press>,
-            <&kp LSHFT>,
-            <&macro_tap>,
-            <&kp N2>,
-            <&macro_release>,
-            <&kp LSHFT>,
-            <&macro_tap>,
-            <&kp G &kp I &kp F>;
+    macros {
+        gif: gif {
+            label = "giphy";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp N2>,
+                <&macro_release>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp G &kp I &kp F>;
+        };
+
+        f13_macro: f13_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "F13_MACRO";
+        };
+
+        f14_macro: f14_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "F14_MACRO";
+        };
+
+        f15_macro: f15_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "F15_MACRO";
+        };
+
+        f16_macro: f16_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "F16_MACRO";
+        };
+
+        f17_macro: f17_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "F17_MACRO";
+        };
+
+        f18_macro: f18_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "F18_MACRO";
+        };
+
+        f19_macro: f19_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "F19_MACRO";
+        };
+
+        f20_macro: f20_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "F20_MACRO";
+        };
+
+        f21_macro: f21_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "F21_MACRO";
+        };
     };
-};
+
     behaviors {
         exq: exq {
             compatible = "zmk,behavior-tap-dance";
