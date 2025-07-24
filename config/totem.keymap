@@ -96,84 +96,83 @@
         };
 
         f13_macro: f13_macro {
-        label = "F13 mouse jump";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings =
-            <&mmv MOVE -1920 -1080>, // 왼쪽 위로 이동
-            <&mmv MOVE 320 180>;     // 오른쪽 아래로 이동
-    };
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+            <&mmv MOVE -1920 -1080>,
+            <&mmv MOVE 320 180>;
+            label = "F13_MACRO";
+        };
 
-        f14_macro: f14_macro {
-        label = "F14 mouse jump";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings =
+         f14_macro: f14_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
             <&mmv MOVE -1920 -1080>,
             <&mmv MOVE 960 180>;
-    };
+            label = "F14_MACRO";
+        };
 
         f15_macro: f15_macro {
-        label = "F15 mouse jump";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings =
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
             <&mmv MOVE -1920 -1080>,
             <&mmv MOVE 1600 180>;
-    };
+            label = "F15_MACRO";
+        };
 
         f16_macro: f16_macro {
-        label = "F16 mouse jump";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings =
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
             <&mmv MOVE -1920 -1080>,
             <&mmv MOVE 320 540>;
-    };
+            label = "F16_MACRO";
+        };
 
         f17_macro: f17_macro {
-        label = "F17 mouse jump";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings =
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
             <&mmv MOVE -1920 -1080>,
             <&mmv MOVE 960 540>;
-    };
+            label = "F17_MACRO";
+        };
         f18_macro: f18_macro {
-        label = "F18 mouse jump";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings =
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
             <&mmv MOVE -1920 -1080>,
             <&mmv MOVE 1600 540>;
-    };
-
+            label = "F18_MACRO";
+        };
         f19_macro: f19_macro {
-        label = "F19 mouse jump";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings =
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
             <&mmv MOVE -1920 -1080>,
             <&mmv MOVE 320 900>;
-    };
+            label = "F19_MACRO";
+        };
 
         f20_macro: f20_macro {
-        label = "F20 mouse jump";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings =
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
             <&mmv MOVE -1920 -1080>,
             <&mmv MOVE 960 900>;
-    };
+            label = "F20_MACRO";
+        };
 
         f21_macro: f21_macro {
-        label = "F21 mouse jump";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings =
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
             <&mmv MOVE -1920 -1080>,
             <&mmv MOVE 1600 900>;
-    };
+            label = "F21_MACRO";
+        };
 };
 
     behaviors {
