@@ -110,93 +110,56 @@
         f13: f13 {
     compatible = "zmk,behavior-mouse-key";
     #binding-cells = <0>;
-    bindings = <
-        // 첫 번째 이동: 왼쪽(음수 X) 1920, 위(음수 Y) 1080
-        0x00 0x00 -1920 -1080 0x00 0x00
-        // 두 번째 이동: 오른쪽(양수 X) 320, 아래(양수 Y) 180
-        0x00 0x00 320 180 0x00 0x00
-    >;
+    move = <-1920 -1080>;
+    move = <320 180>;
 };
         f14: f14 {
     compatible = "zmk,behavior-mouse-key";
     #binding-cells = <0>;
-    bindings = <
-        // 첫 번째 이동: 왼쪽(음수 X) 1920, 위(음수 Y) 1080
-        0x00 0x00 -1920 -1080 0x00 0x00
-        // 두 번째 이동: 오른쪽(양수 X) 960, 아래(양수 Y) 180
-        0x00 0x00 960 180 0x00 0x00
-    >;
+    move = <-1920 -1080>;
+    move = <960 180>;
 };
         f15: f15 {
     compatible = "zmk,behavior-mouse-key";
     #binding-cells = <0>;
-    bindings = <
-        // 첫 번째 이동: 왼쪽(음수 X) 1920, 위(음수 Y) 1080
-        0x00 0x00 -1920 -1080 0x00 0x00
-        // 두 번째 이동: 오른쪽(양수 X) 1600, 아래(양수 Y) 180
-        0x00 0x00 1600 180 0x00 0x00
-    >;
+    move = <-1920 -1080>;
+    move = <1600 180>;
 };
-        };
         f16: f16 {
     compatible = "zmk,behavior-mouse-key";
     #binding-cells = <0>;
-    bindings = <
-        // 첫 번째 이동: 왼쪽(음수 X) 1920, 위(음수 Y) 1080
-        0x00 0x00 -1920 -1080 0x00 0x00
-        // 두 번째 이동: 오른쪽(양수 X) 320, 아래(양수 Y) 540
-        0x00 0x00 320 540 0x00 0x00
-    >;
+    move = <-1920 -1080>;
+    move = <320 540>;
 };
         f17: f17 {
     compatible = "zmk,behavior-mouse-key";
     #binding-cells = <0>;
-    bindings = <
-        // 첫 번째 이동: 왼쪽(음수 X) 1920, 위(음수 Y) 1080
-        0x00 0x00 -1920 -1080 0x00 0x00
-        // 두 번째 이동: 오른쪽(양수 X) 960, 아래(양수 Y) 540
-        0x00 0x00 960 540 0x00 0x00
-    >;
+    move = <-1920 -1080>;
+    move = <960 540>;
 };
         f18: f18 {
     compatible = "zmk,behavior-mouse-key";
     #binding-cells = <0>;
-    bindings = <
-        // 첫 번째 이동: 왼쪽(음수 X) 1920, 위(음수 Y) 1080
-        0x00 0x00 -1920 -1080 0x00 0x00
-        // 두 번째 이동: 오른쪽(양수 X) 1600, 아래(양수 Y) 540
-        0x00 0x00 1600 540 0x00 0x00
-    >;
+    move = <-1920 -1080>;
+    move = <1600 540>;
 };
         f19: f19 {
     compatible = "zmk,behavior-mouse-key";
     #binding-cells = <0>;
-    bindings = <
-        // 첫 번째 이동: 왼쪽(음수 X) 1920, 위(음수 Y) 1080
-        0x00 0x00 -1920 -1080 0x00 0x00
-        // 두 번째 이동: 오른쪽(양수 X) 320, 아래(양수 Y) 900
-        0x00 0x00 320 900 0x00 0x00
-    >;
+    move = <-1920 -1080>;
+    move = <320 900>;
 };
         f20: f20 {
     compatible = "zmk,behavior-mouse-key";
     #binding-cells = <0>;
-    bindings = <
-        // 첫 번째 이동: 왼쪽(음수 X) 1920, 위(음수 Y) 1080
-        0x00 0x00 -1920 -1080 0x00 0x00
-        // 두 번째 이동: 오른쪽(양수 X) 960, 아래(양수 Y) 900
-        0x00 0x00 960 900 0x00 0x00
-    >;
+    move = <-1920 -1080>;
+    move = <960 900>;
 };
         f21: f21 {
     compatible = "zmk,behavior-mouse-key";
     #binding-cells = <0>;
-    bindings = <
-        // 첫 번째 이동: 왼쪽(음수 X) 1920, 위(음수 Y) 1080
-        0x00 0x00 -1920 -1080 0x00 0x00
-        // 두 번째 이동: 오른쪽(양수 X) 1600, 아래(양수 Y) 900
-        0x00 0x00 1600 900 0x00 0x00
-    >;
+    move = <-1920 -1080>;
+    move = <1600 900>;
 };
 
     keymap {
