@@ -68,11 +68,6 @@
             key-positions = <9 19>;
         };
 
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <16 17>;
-        };
-
         caps {
             bindings = <&kp CAPS>;
             key-positions = <13 14>;
@@ -94,8 +89,7 @@
                 <&macro_tap>,
                 <&kp G &kp I &kp F>;
         };
-
-};
+    };
 
     behaviors {
         exq: exq {
@@ -191,7 +185,7 @@
 
         layer_3 {
             bindings = <
-        &trans  &kp F13  &kp F14  &kp F15  &trans    &msc SCRL_DOWN  &trans          &trans          &trans           &kp PAGE_UP
+        &trans  &kp F13  &kp F14  &kp F15  &trans    &msc SCRL_DOWN  &kp LC(LEFT)    &kp LC(RIGHT)   &trans           &kp PAGE_UP
         &trans  &kp F16  &kp F17  &kp F18  &trans    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &kp PAGE_DOWN
 &trans  &trans  &kp F19  &kp F20  &kp F21  &trans    &trans          &trans          &mmv MOVE_DOWN  &trans           &trans         &trans
                          &trans   &trans   &trans    &trans          &mkp LCLK       &mkp RCLK
