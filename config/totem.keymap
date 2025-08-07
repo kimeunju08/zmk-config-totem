@@ -150,8 +150,8 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp LG(Z)  &kp LG(A)  &kp LG(C)  &kp LG(V)    &kp HOME             &kp C_VOL_UP  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp C_BRI_INC
-              &kp LG(S)  &kp LEFT   &kp UP     &kp RIGHT    &kp END              &kp C_VOL_DN  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp C_BRI_DEC
+              &kp LG(Z)  &kp LG(A)  &kp LG(C)  &kp LG(V)    &kp LC(LEFT)         &kp C_VOL_UP  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp C_BRI_INC
+              &kp LG(S)  &kp LEFT   &kp UP     &kp RIGHT    &kp LC(RIGHT)        &kp C_VOL_DN  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp C_BRI_DEC
 &kp RS(CAPS)  &kp TAB    &kp LG(X)  &kp DOWN   &kp RS(END)  &kp RG(BACKSPACE)    &kp K_MUTE    &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans         &kp ESC
                                     &trans     &trans       &trans               &trans        &kp KP_N0  &trans
             >;
@@ -185,10 +185,10 @@
 
         layer_3 {
             bindings = <
-        &trans  &kp F13  &kp F14  &kp F15  &trans    &msc SCRL_DOWN  &kp LC(LEFT)    &kp LC(RIGHT)   &trans           &kp PAGE_UP
-        &trans  &kp F16  &kp F17  &kp F18  &trans    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &kp PAGE_DOWN
-&trans  &trans  &kp F19  &kp F20  &kp F21  &trans    &trans          &trans          &mmv MOVE_DOWN  &trans           &trans         &trans
-                         &trans   &trans   &trans    &trans          &mkp LCLK       &mkp RCLK
+        &kp HOME  &kp F13  &kp F14  &kp F15  &kp PAGE_UP      &msc SCRL_DOWN  &trans          &trans          &trans           &trans
+        &kp END   &kp F16  &kp F17  &kp F18  &kp PAGE_DOWN    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans
+&trans  &trans    &kp F19  &kp F20  &kp F21  &trans           &trans          &trans          &mmv MOVE_DOWN  &trans           &trans  &trans
+                           &trans   &trans   &trans           &trans          &mkp LCLK       &mkp RCLK
             >;
         };
 
